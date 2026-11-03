@@ -1,5 +1,9 @@
 salario_atual = float(input('Salário atual do funcionário: R$ '))
-reajuste = salario_atual * 0.15
+percentual = float(input('informe o dígito para percentual: '))
+
+percentual = percentual / 100
+
+reajuste = salario_atual * percentual
 
 novo_salario = salario_atual + reajuste
 
